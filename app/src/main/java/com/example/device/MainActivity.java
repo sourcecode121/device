@@ -18,6 +18,16 @@ public class MainActivity extends AppCompatActivity {
     TextView model;
     @BindView(R.id.device)
     TextView device;
+    @BindView(R.id.board)
+    TextView board;
+    @BindView(R.id.bootloader)
+    TextView bootloader;
+    @BindView(R.id.brand)
+    TextView brand;
+    @BindView(R.id.hardware)
+    TextView hardware;
+    @BindView(R.id.serial)
+    TextView serial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +36,14 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        manufacturer.setText(Build.MANUFACTURER);
-        product.setText(Build.PRODUCT);
-        model.setText(Build.MODEL);
-        device.setText(Build.DEVICE);
+        manufacturer.append(Build.MANUFACTURER);
+        product.append(Build.PRODUCT);
+        model.append(Build.MODEL);
+        device.append(Build.DEVICE);
+        board.append(Build.BOARD);
+        bootloader.append(Build.BOOTLOADER);
+        brand.append(Build.BRAND);
+        hardware.append(Build.HARDWARE);
+        serial.append(Build.SERIAL);
     }
 }
