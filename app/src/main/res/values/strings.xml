@@ -9,4 +9,7 @@
     <string name="brand">Brand:</string>
     <string name="hardware">Hardware:</string>
     <string name="serial">Serial:</string>
+    <string name="base_os">Base OS:</string>
+    <string name="release">Release:</string>
+    <string name="sdk_int">SDK INT:</string>
 </resources>

@@ -73,4 +73,25 @@
         android:layout_marginTop="4dp"
         android:text="@string/serial"/>
 
+    <TextView
+        android:id="@+id/base_os"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/base_os"/>
+
+    <TextView
+        android:id="@+id/release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/release"/>
+
+    <TextView
+        android:id="@+id/sdk_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/sdk_int"/>
+
 </LinearLayout>
