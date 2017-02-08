@@ -12,4 +12,5 @@
     <string name="base_os">Base OS:</string>
     <string name="release">Release:</string>
     <string name="sdk_int">SDK INT:</string>
+    <string name="error_message">Unable to find the information</string>
 </resources>
