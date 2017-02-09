@@ -14,20 +14,20 @@ import butterknife.ButterKnife;
 import static com.example.device.Utility.getFileInfo;
 
 /**
- * Created by Anand on 07/02/2017.
+ * Created by Anand on 08/02/2017.
  */
 
-public class CpuFragment extends Fragment {
+public class MemoryFragment extends Fragment {
 
-    @BindView(R.id.cpu_info)
-    TextView cpuInfo;
+    @BindView(R.id.memory_info)
+    TextView memoryInfo;
 
-    public static final String TITLE = "CPU";
+    public static final String TITLE = "Memory";
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_cpu, container, false);
+        View v = inflater.inflate(R.layout.fragment_memory, container, false);
         ButterKnife.bind(this, v);
         return v;
     }
@@ -36,13 +36,13 @@ public class CpuFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        StringBuffer info = getFileInfo("/proc/cpuinfo");
+        StringBuffer info = getFileInfo("/proc/meminfo");
 
         if (info != null) {
-            cpuInfo.setText(info);
+            memoryInfo.setText(info);
         }
         else {
-            cpuInfo.setText(R.string.error_message);
+            memoryInfo.setText(R.string.error_message);
         }
     }
 }

@@ -19,14 +19,17 @@ public class ContentAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new DeviceFragment();
         }
-        else {
+        else if (position == 1) {
             return new CpuFragment();
+        }
+        else {
+            return new MemoryFragment();
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Override
@@ -34,8 +37,11 @@ public class ContentAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return DeviceFragment.TITLE;
         }
-        else {
+        else if (position == 1) {
             return CpuFragment.TITLE;
+        }
+        else {
+            return MemoryFragment.TITLE;
         }
     }
 }
