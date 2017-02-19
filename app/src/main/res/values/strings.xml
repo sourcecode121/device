@@ -13,4 +13,15 @@
     <string name="release">Release:</string>
     <string name="sdk_int">SDK INT:</string>
     <string name="error_message">Unable to find the information</string>
+    <string name="status">Status : %s</string>
+    <string name="plugged">Plugged : %s</string>
+    <string name="percentage">Percentage : %s</string>
+    <string name="charging">Charging</string>
+    <string name="full">Full</string>
+    <string name="unknown">Unknown</string>
+    <string name="discharging">Discharging</string>
+    <string name="usb">USB</string>
+    <string name="ac">AC</string>
+    <string name="wireless">Wireless</string>
+    <string name="no">No</string>
 </resources>
