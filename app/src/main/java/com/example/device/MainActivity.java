@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         ContentAdapter adapter = new ContentAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+        viewPager.setPageTransformer(true, new PageTransition());
         tabLayout.setupWithViewPager(viewPager);
     }
 }
